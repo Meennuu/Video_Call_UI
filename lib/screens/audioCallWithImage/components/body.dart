@@ -44,16 +44,19 @@ class Body extends StatelessWidget {
                   children: [
                     RoundedButton(
                       iconScr: "assets/icons/Icon Mic.svg",
+                      iconColor: Colors.black,
                       press: () {},
                       color: Colors.white,
                     ),
                     RoundedButton(
                       iconScr: "assets/icons/call_end.svg",
+                      iconColor: Colors.white,
                       press: () {},
                       color: kRedColor,
                     ),
                     RoundedButton(
                       iconScr: "assets/icons/Icon Volume.svg",
+                      iconColor: Colors.black,
                       press: () {},
                       color: Colors.white,
                     ),

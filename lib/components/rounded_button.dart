@@ -8,30 +8,33 @@ class RoundedButton extends StatelessWidget {
     required this.iconScr,
     required this.press,
     required this.color,
+    required this.iconColor,
+    this.size = 64,
   });
 
+  final double size;
   final String iconScr;
-  final Color color;
+  final Color color, iconColor;
   final VoidCallback press;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: getProportionateScreenHeight(60),
-      width: getProportionateScreenWidth(60),
+      height: getProportionateScreenHeight(size),
+      width: getProportionateScreenWidth(size),
       child: Container(
-        decoration: const BoxDecoration(
-          color: Colors.red,
+        decoration: BoxDecoration(
+          color: color,
           shape: BoxShape.circle,
         ),
         child: IconButton(
           icon: SvgPicture.asset(
             iconScr,
-            color: Colors.white,
+            color: iconColor,
             width: getProportionateScreenWidth(32),
             height: getProportionateScreenHeight(32),
           ),
           onPressed: press,
-          color: color,
         ),
       ),
     );

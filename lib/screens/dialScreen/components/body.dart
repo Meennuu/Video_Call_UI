@@ -82,6 +82,7 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               iconScr: "assets/icons/call_end.svg",
+              iconColor: Colors.white,
               press: () {},
               color: kRedColor,
             ),
