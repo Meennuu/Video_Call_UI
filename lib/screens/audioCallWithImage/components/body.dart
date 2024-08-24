@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:videocallui/components/rounded_button.dart';
 import 'package:videocallui/size_config.dart';
 
 import '../../../constants.dart';
@@ -44,64 +42,20 @@ class Body extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    SizedBox(
-                      height: getProportionateScreenHeight(60),
-                      width: getProportionateScreenWidth(60),
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle,
-                        ),
-                        child: IconButton(
-                          icon: SvgPicture.asset(
-                            "assets/icons/Icon Mic.svg",
-                            color: Colors.black,
-                            width: getProportionateScreenWidth(32),
-                            height: getProportionateScreenHeight(32),
-                          ),
-                          onPressed: () {},
-                          padding: EdgeInsets.zero,
-                        ),
-                      ),
+                    RoundedButton(
+                      iconScr: "assets/icons/Icon Mic.svg",
+                      press: () {},
+                      color: Colors.white,
                     ),
-                    SizedBox(
-                      height: getProportionateScreenHeight(60),
-                      width: getProportionateScreenWidth(60),
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          color: Colors.red,
-                          shape: BoxShape.circle,
-                        ),
-                        child: IconButton(
-                          icon: SvgPicture.asset(
-                            "assets/icons/call_end.svg",
-                            color: Colors.white,
-                            width: getProportionateScreenWidth(32),
-                            height: getProportionateScreenHeight(32),
-                          ),
-                          onPressed: () {},
-                          color: kRedColor,
-                        ),
-                      ),
+                    RoundedButton(
+                      iconScr: "assets/icons/call_end.svg",
+                      press: () {},
+                      color: kRedColor,
                     ),
-                    SizedBox(
-                      height: getProportionateScreenHeight(60),
-                      width: getProportionateScreenWidth(60),
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle,
-                        ),
-                        child: IconButton(
-                          icon: SvgPicture.asset(
-                            "assets/icons/Icon Volume.svg",
-                            color: Colors.black,
-                            width: getProportionateScreenWidth(32),
-                            height: getProportionateScreenHeight(32),
-                          ),
-                          onPressed: () {},
-                        ),
-                      ),
+                    RoundedButton(
+                      iconScr: "assets/icons/Icon Volume.svg",
+                      press: () {},
+                      color: Colors.white,
                     ),
                   ],
                 )
