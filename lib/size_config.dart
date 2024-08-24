@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-// SizeConfig help us to make our UI responsive
-/// Make sure you need to call [SizeConfig.init(context)] on your starting screen
 class SizeConfig {
   static MediaQueryData? _mediaQueryData;
   static double? screenWidth;
@@ -17,17 +15,13 @@ class SizeConfig {
   }
 }
 
-// Get the proportionate height as per screen size
 double getProportionateScreenHeight(double inputHeight) {
   double? screenHeight = SizeConfig.screenHeight;
-  // Our designer use iPhone 11, that's why we use 896.0
   return (inputHeight / 896.0) * screenHeight!;
 }
 
-// Get the proportionate height as per screen size
 double getProportionateScreenWidth(double inputWidth) {
   double? screenWidth = SizeConfig.screenWidth;
-  // 414 is the layout width that designer use or you can say iPhone 11  width
   return (inputWidth / 414.0) * screenWidth!;
 }
 

@@ -22,20 +22,7 @@ class Body extends StatelessWidget {
             : Image.asset(
                 demoData[index]["image"],
                 fit: BoxFit.cover,
-              )
-
-        // Container(
-        //       color: Colors.black45,
-        //       // width: SizeConfig.screenWidth! / 2,
-        //       // child: const AspectRatio(
-        //       //   aspectRatio: 0.53,
-        //       //   child: UserCallingCard(
-        //       //     name: "Steve Jon",
-        //       //     image: "assets/images/group_call_face_small.png",
-        //       //   ),
-        //       // ),
-        //     )
-        );
+              ));
   }
 }
 
@@ -43,7 +30,7 @@ List<Map<String, dynamic>> demoData = [
   {
     "isCalling": false,
     "name": "User 1",
-    "image": "assets/images/goup_call_1.png",
+    "image": "assets/images/full_image.png",
   },
   {
     "isCalling": true,
@@ -58,6 +45,6 @@ List<Map<String, dynamic>> demoData = [
   {
     "isCalling": false,
     "name": "User 1",
-    "image": "assets/images/group_call_face_3.png",
+    "image": "assets/images/group_call_1.png",
   },
 ];

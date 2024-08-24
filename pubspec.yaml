@@ -63,7 +63,7 @@ flutter:
   assets:
     - assets/images/calling_face.png
     - assets/images/full_image.png
-    - assets/images/goup_call_1.png
+    - assets/images/group_call_1.png
     - assets/images/group_call_face_2.png
     - assets/images/group_call_face_3.png
     - assets/images/group_call_face_small.png
